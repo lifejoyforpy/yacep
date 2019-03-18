@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace TupacAmaru.Yacep.Utils
+﻿namespace TupacAmaru.Yacep.Utils
 {
     public static class BoolConsensus
     {
@@ -35,7 +33,7 @@ namespace TupacAmaru.Yacep.Utils
                 case decimal decimalValue:
                     return 0 < decimalValue;
                 case string stringValue:
-                    return !String.IsNullOrWhiteSpace(stringValue);
+                    return !string.IsNullOrWhiteSpace(stringValue);
                 default:
                     return value != null;
             }
